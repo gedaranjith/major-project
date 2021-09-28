@@ -1,7 +1,7 @@
 from telegram.ext import Updater, MessageHandler, Filters
 from Adafruit_IO import Client
 
- import os
+import os
 
 client_name=os.getenv('client_name')
 client_api=os.getenv('client_api')
@@ -16,7 +16,7 @@ def light_on(bot,update):
 def light_off(bot,update):
    chat_id = bot.message.chat_id
    bot.message.reply_text('  Lights off ')
-   aio.send('light',0)
+   aio.send('light',0) 
 
 def fan_on(bot,update):
   chat_id = bot.message.chat_id
