@@ -11,12 +11,12 @@ aio=Client(client_name,client_api)
 def light_on(bot,update):
   chat_id = bot.message.chat_id
   bot.message.reply_text('Lights on !')
-  aio.send('major-project',1)
+  aio.send('light',1)
 
 def light_off(bot,update):
    chat_id = bot.message.chat_id
    bot.message.reply_text('  Lights off ')
-   aio.send('major-project',0)
+   aio.send('light',0)
 
 def fan_on(bot,update):
   chat_id = bot.message.chat_id
