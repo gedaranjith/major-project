@@ -33,13 +33,13 @@ def main(bot,update):
   if a =="turn on the lights":
     light_on(bot,update)
 
-  if a=='turn off the lights':
+  if a=="turn off the lights":
     light_off(bot,update)
 
-  if a=='turn on the fan':
+  if a=="turn on the fan":
     fan_on(bot,update)
 
-  if a=='turn off the fan':
+  if a=="turn off the fan":
     fan_off(bot,update)
 
 bot_token =os.getenv('bot_token')
