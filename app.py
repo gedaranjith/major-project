@@ -21,7 +21,7 @@ def light_off(bot,update):
 def fan_on(bot,update):
   chat_id = bot.message.chat_id
   bot.message.reply_text('Fan ON')
-  aio.send('fan',1)
+  aio.send('fan',1) 
 
 def fan_off(bot,update):
   chat_id = bot.message.chat_id
